@@ -1,0 +1,102 @@
+
+.holder {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.header-content{
+    min-height: 75vh;
+    /* background: linear-gradient(rgba(37, 15, 44, 0.3), rgba(0, 0, 0, 0.5)), url("https://elements-resized.envatousercontent.com/envato-shoebox/d419/6e10-b811-46c0-b099-a70eab16c41c/270_IMG_5062.jpg?w=1400&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=4f3b7b8dbe07c900812edcc6bb045b466c5f8df0f01af3090329446ac7f7ade6"); */
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header-title{
+    margin-top: 200px;
+    font-size: 6rem;
+}
+.background{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    float: left;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: none;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    filter: blur(7px);
+}
+
+.container .text{
+    position: relative;
+    color:rgba(226, 40, 136, 0.8);
+    font-size: 40px;
+    font-weight: 600px;
+}
+button {
+   background: none;
+    border: 1px solid #3498db;
+    padding: 10px 20px;
+    font-size: 3rem;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    /* background-color: #ff4500; Darker shade of tomato */
+    color: #f2fc2f;
+    transform: scale(1.05);
+}
+
+button span {
+    display: inline-block;
+}
+@media screen and (max-width: 768px){
+    .header {
+        height: auto; 
+    }
+    .background {
+        background-size: cover;
+        background-position: center top; /* Adjusts the focus area of the image */
+        height: 100vh;
+        width: 35vh; /* Adjust height for smaller screens */
+    }
+
+    .header-content{
+        background-position: center top;
+        background-size: cover;
+        min-height: 50vh;
+    }
+    .header-title {
+        font-size: 2.5rem; 
+        text-align: center;
+    }
+    .container .text {
+        font-size: 20px; 
+        text-align: center;
+    }
+    button {
+        font-size: 2rem; 
+        padding: 8px 16px; 
+    }
+}

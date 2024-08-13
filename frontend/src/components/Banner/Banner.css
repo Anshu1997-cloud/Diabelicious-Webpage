@@ -1,0 +1,387 @@
+/* .textwithslider_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    
+    background-color: #fff;
+  }
+  
+  .textwithslider_common {
+    flex: 1;
+  }
+  
+  .textwithslider_left {
+    max-width: 50%;
+  }
+  
+  .textwithslider_right {
+    max-width: 50%;
+  }
+  
+  .textwithslider_common_body p {
+    margin-bottom: 10px;
+  }
+  .carousel-container {
+    flex: 1;
+    margin-left: 20px;
+    overflow: hidden;
+    max-width: 600px;
+  }
+  .carousel-container img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+  }
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .know_more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .know_more:hover {
+    text-decoration: underline;
+  }
+  
+  .btn_darzeebg {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  .btn_darzeebg span {
+    font-size: 1.2em;
+  }
+  
+  .textwithslider_right {
+    position: relative;
+  }
+  
+  .list-unstyled {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list-unstyled li {
+    flex: 1;
+    transition: flex 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .list-unstyled li img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .img_label {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .list-unstyled li.hovered {
+    flex: 2;
+  }
+  
+  .list-unstyled li.hovered img {
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  
+  .list-unstyled li img.expanded {
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  
+  .list-unstyled li img:not(.expanded) {
+    opacity: 0.6;
+  }
+  
+  .img_label.visible {
+    opacity: 1;
+  }
+  .App {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  @media screen and (max-width: 768px){
+    .textwithslider_wrapper {
+      padding: 20px; 
+    }
+  
+    .textwithslider_left, .textwithslider_right {
+      max-width: 100%; 
+      text-align: center; 
+    }
+    .carousel-container {
+      max-width: 100%; 
+      margin-left: 0; 
+    }
+    .carousel-container img {
+      width: 200%; 
+      height: auto;
+    }
+    .list-unstyled {
+      flex-wrap: wrap; 
+    }
+  
+    .list-unstyled li {
+      flex: 1 1 100%; 
+      margin-bottom: 10px; 
+    }
+  
+    .img_label {
+      font-size: 1rem; 
+    }
+  } */
+
+  /* Your existing CSS here */
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+
+
+.tranding-slide .tranding-slide-img img {
+  width: 37rem;
+  height: 42rem;
+  border-radius: 2rem;
+  object-fit: cover;
+} */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+.textwithslider_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+  
+  background-color:#fff;
+}
+
+#tranding {
+   margin-left: 20%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-subheading {
+  font-size: 5rem;
+  font-weight: 500;
+  color: #ff6347; 
+  margin-bottom: 1rem;
+}
+
+.section-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+.tranding-slider {
+  padding: 2rem 0;
+}
+
+.tranding-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tranding-slide-img img {
+  width: 37rem;
+  height: 42rem;
+  border-radius: 2rem;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tranding-slide:hover .tranding-slide-img img {
+  transform: scale(1.05);
+}
+
+.tranding-slide-content {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.food-price {
+  font-size: 1.90rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.tranding-slide-content-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff6347;
+}
+
+.food-rating {
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.food-rating span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff6347;
+  margin-right: 0.5rem;
+}
+
+.rating {
+  display: flex;
+}
+
+.rating ion-icon {
+  font-size: 1.5rem;
+  color: #ffd700; 
+}
+
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ff6347;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #333;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff6347;
+  transition: color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #333;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* .textwithslider_wrapper {
+    padding: 50px; 
+    flex-direction: column; 
+    align-items: flex-start; 
+  } */
+
+  #tranding {
+    margin-left: 0; 
+    text-align: center; 
+    width: 100%;
+  }
+
+  .container {
+max-width: 900px;
+  }
+
+  .section-subheading {
+    font-size: 2.5rem; /* Smaller font size for subheading */
+  }
+
+  .section-heading {
+    font-size: 1.8rem; /* Smaller font size for heading */
+    margin-bottom: 2rem; /* Adjust margin for smaller screens */
+  }
+
+  .tranding-slide-img img {
+    width: 100%; /* Full width images */
+    height: auto; /* Auto height to maintain aspect ratio */
+  }
+
+  .food-price {
+    font-size: 1.5rem; /* Smaller font size for price */
+  }
+
+  .food-name {
+    font-size: 1.5rem; /* Smaller font size for food name */
+  }
+
+  .food-rating {
+    font-size: 1rem; /* Smaller font size for rating */
+  }
+
+  .food-rating span {
+    font-size: 1.5rem; /* Smaller font size for rating span */
+  }
+
+  .rating ion-icon {
+    font-size: 1.25rem; /* Smaller icon size */
+  }
+
+  .swiper-pagination {
+    bottom: 1rem; /* Adjust bottom position */
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-size: 1.5rem; /* Smaller font size for navigation buttons */
+  }
+}

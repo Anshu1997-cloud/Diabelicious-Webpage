@@ -1,0 +1,156 @@
+.textwithslider_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    
+    background-color: #fff;
+  }
+  
+  .textwithslider_common {
+    flex: 1;
+  }
+  
+  .textwithslider_left {
+    max-width: 50%;
+  }
+  
+  .textwithslider_right {
+    max-width: 50%;
+  }
+  
+  .textwithslider_common_body p {
+    margin-bottom: 10px;
+  }
+  .carousel-container {
+    flex: 1;
+    margin-left: 20px;
+    overflow: hidden;
+    max-width: 600px;
+  }
+  .carousel-container img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+  }
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .know_more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .know_more:hover {
+    text-decoration: underline;
+  }
+  
+  .btn_darzeebg {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  .btn_darzeebg span {
+    font-size: 1.2em;
+  }
+  
+  .textwithslider_right {
+    position: relative;
+  }
+  
+  .list-unstyled {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list-unstyled li {
+    flex: 1;
+    transition: flex 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .list-unstyled li img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .img_label {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .list-unstyled li.hovered {
+    flex: 2;
+  }
+  
+  .list-unstyled li.hovered img {
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  
+  .list-unstyled li img.expanded {
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  
+  .list-unstyled li img:not(.expanded) {
+    opacity: 0.6;
+  }
+  
+  .img_label.visible {
+    opacity: 1;
+  }
+  .App {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  @media screen and (max-width: 768px){
+    .textwithslider_wrapper {
+      padding: 20px; 
+    }
+  
+    .textwithslider_left, .textwithslider_right {
+      max-width: 100%; 
+      text-align: center; 
+    }
+    .carousel-container {
+      max-width: 100%; 
+      margin-left: 0; 
+    }
+    .carousel-container img {
+      width: 200%; 
+      height: auto;
+    }
+    .list-unstyled {
+      flex-wrap: wrap; 
+    }
+  
+    .list-unstyled li {
+      flex: 1 1 100%; 
+      margin-bottom: 10px; 
+    }
+  
+    .img_label {
+      font-size: 1rem; 
+    }
+  }
